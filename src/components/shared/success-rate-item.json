@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_shared_success_rate_items",
+  "info": {
+    "displayName": "Success rate item",
+    "icon": "chartPie"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "subtitle": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

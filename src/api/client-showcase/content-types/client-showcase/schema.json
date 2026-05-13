@@ -1,0 +1,72 @@
+{
+  "kind": "collectionType",
+  "collectionName": "client_showcases",
+  "info": {
+    "singularName": "client-showcase",
+    "pluralName": "client-showcases",
+    "displayName": "Client showcase",
+    "description": "Client work with title, logo, website, cover photo, date, success rate, key takeaways, category, and rich content (text and images)"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "clientName": {
+      "type": "string",
+      "required": true
+    },
+    "clientWebsite": {
+      "type": "string",
+      "required": false
+    },
+    "clientLogo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    },
+    "coverPhoto": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    },
+    "date": {
+      "type": "date",
+      "required": false
+    },
+    "successRate": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.success-rate-item",
+      "min": 3,
+      "max": 3,
+      "required": false
+    },
+    "category": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::category.category",
+      "inversedBy": "clientShowcases"
+    },
+    "content": {
+      "type": "blocks",
+      "required": false
+    },
+    "keyTakeaways": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.key-takeaway",
+      "required": false
+    }
+  }
+}

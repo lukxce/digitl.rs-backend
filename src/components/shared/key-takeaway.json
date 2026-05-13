@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_shared_key_takeaways",
+  "info": {
+    "displayName": "Key takeaway",
+    "icon": "bulletList"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    }
+  }
+}
