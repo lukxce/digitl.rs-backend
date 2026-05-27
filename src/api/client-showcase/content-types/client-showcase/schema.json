@@ -16,6 +16,10 @@
       "type": "string",
       "required": true
     },
+    "description": {
+      "type": "text",
+      "required": false
+    },
     "slug": {
       "type": "uid",
       "targetField": "title"
