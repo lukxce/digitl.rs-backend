@@ -591,6 +591,7 @@ export interface ApiClientShowcaseClientShowcase
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
     date: Schema.Attribute.Date;
+    description: Schema.Attribute.Text;
     keyTakeaways: Schema.Attribute.Component<'shared.key-takeaway', true>;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<

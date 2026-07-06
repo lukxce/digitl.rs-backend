@@ -3,6 +3,12 @@
 !.env.example
 node_modules/
 build/
+dist/
 .tmp/
 .cache/
+.strapi/
+.strapi-updater.json
+exports/
+*.dump
+.DS_Store
 *.log

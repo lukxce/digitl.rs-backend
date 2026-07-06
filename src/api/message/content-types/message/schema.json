@@ -18,7 +18,8 @@
     },
     "text": {
       "type": "text",
-      "required": true
+      "required": true,
+      "maxLength": 5000
     }
   }
 }
